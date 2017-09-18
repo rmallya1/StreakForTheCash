@@ -23,8 +23,7 @@ def main():
         data = r.text
         soup = BeautifulSoup(data)
         
-        #print soup.prettify()
-        
+               
         rows = soup.find_all('div',{"class":"matchup-container"})
         
         #print rows
